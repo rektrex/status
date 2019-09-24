@@ -5,7 +5,7 @@ set mute (echo $state | cut -d " " -f 2)
 set val (echo $state | cut -d " " -f 1)
 
 if test "$mute" = "off" 
-    set val "($val)[muted]"
+    set val " ($val)[muted]"
 end
 
-echo "<b>$val</b>"
+echo " <b>$val</b>"
